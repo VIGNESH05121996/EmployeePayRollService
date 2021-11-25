@@ -28,3 +28,13 @@ INSERT INTO payroll_table VALUES ('Charlie',72732.63,'2012.05.04','F');
 update payroll_table set Gender='M' where id=4;
 update payroll_table set startDate='2007-07-06' where id=2 or id=3;
 update payroll_table set startDate='2007-07-06' where id=3 and name='Dhoni';
+
+------UC7-Perform Mathematical Calculations------
+select * from payroll_table;
+select sum(salary) as TotalSalary from payroll_table;
+select avg(salary) as AverageSalary from payroll_table;
+select max(salary) as MaxSalary from payroll_table;
+select min(salary) as MinSalary from payroll_table; 
+select count(salary) as CountTotalEmployee from payroll_table;
+select count(salary) as CountTotalEmployeeByGender from payroll_table group by Gender;
+
