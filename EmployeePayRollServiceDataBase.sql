@@ -38,3 +38,9 @@ select min(salary) as MinSalary from payroll_table;
 select count(salary) as CountTotalEmployee from payroll_table;
 select count(salary) as CountTotalEmployeeByGender from payroll_table group by Gender;
 
+-----UC8-AbilityToExtendPayRoll-----
+select * from payroll_table;
+ALTER TABLE payroll_table Add PhoneNumber bigint;
+ALTER TABLE payroll_table ADD Address varchar(250) null default 'Bangalore';
+ALTER TABLE payroll_table ADD Department varchar(250) not null default 'HR';
+
