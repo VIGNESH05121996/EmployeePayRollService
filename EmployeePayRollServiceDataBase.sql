@@ -8,3 +8,7 @@ name varchar(200),
 salary float,
 startDate date
 ); 
+
+-----UC3-Inserting New Employee To Table-----
+INSERT INTO payroll_table(name,salary) VALUES('Dhoni',7984732.63),('Sachin',877478.63); 
+select * from payroll_table;
