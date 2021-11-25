@@ -20,3 +20,11 @@ select salary from payroll_table where name='Bill';
 select * from payroll_table where startDate between cast('2018-12-09' as date) and getDate();
 select * from payroll_table;
 
+-----UC6-AddGenderToEmployeepayRoll-----
+select * from payroll_table;
+ALTER TABLE payroll_table ADD Gender char(1);
+update payroll_table set Gender='M';
+INSERT INTO payroll_table VALUES ('Charlie',72732.63,'2012.05.04','F');
+update payroll_table set Gender='M' where id=4;
+update payroll_table set startDate='2007-07-06' where id=2 or id=3;
+update payroll_table set startDate='2007-07-06' where id=3 and name='Dhoni';
