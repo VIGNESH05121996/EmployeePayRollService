@@ -48,3 +48,7 @@ ALTER TABLE payroll_table ADD Department varchar(250) not null default 'HR';
 select * from payroll_table;
 ALTER TABLE payroll_table ADD Basic_pay bigint,Deduction bigint,Taxable_Pay float,Income_Tax float,Net_Pay float;
 
+-------------UC10-add terrisa as a part of sales and marketing department-------
+select * from payroll_table;
+INSERT INTO payroll_table (name,salary,Department) values ('Terrisa',4000,'Sales');
+INSERT INTO payroll_table(name,salary,Department) values ('Terrisa',4000,'Marketing');
